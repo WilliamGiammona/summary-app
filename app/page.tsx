@@ -1,4 +1,7 @@
 import Image from "next/image";
+import { FaFileAlt } from "react-icons/fa";
+import { FaLightbulb } from "react-icons/fa";
+import { FaMicrophone } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -27,9 +30,15 @@ export default function Home() {
           Understand books in few minutes
         </h2>
         <div className="flex justify-center items-center text-center">
-          <div className="w-1/3 bg-blue-300 text-center">h</div>
-          <div className="w-1/3">h</div>
-          <div className="w-1/3 bg-blue-300 text-center">h</div>
+          <div className="w-1/3 bg-blue-300 text-center">
+            <FaFileAlt size={40} />
+          </div>
+          <div className="w-1/3">
+            <FaLightbulb size={40} />
+          </div>
+          <div className="w-1/3 bg-blue-300 text-center">
+            <FaMicrophone size={40} />
+          </div>
         </div>
       </section>
     </>
