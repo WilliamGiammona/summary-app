@@ -13,17 +13,17 @@ const NavBar = () => {
           height={50}
         />
       </figure>
-      <ul className="flex text-nav-default text-base">
+      <ul className="flex  text-base">
         <li className="mx-4 hover:text-nav-hover transition-colors duration-100">
           <Link href="/">Login</Link>
         </li>
-        <li className="mx-4 cursor-not-allowed hover:text-nav-default">
+        <li className="mx-4 cursor-not-allowed">
           <span>About</span>
         </li>
-        <li className="mx-4 cursor-not-allowed hover:text-nav-default">
+        <li className="mx-4 cursor-not-allowed">
           <span>Contact</span>
         </li>
-        <li className="mx-4 cursor-not-allowed hover:text-nav-default">
+        <li className="mx-4 cursor-not-allowed">
           <span>Help</span>
         </li>
       </ul>
