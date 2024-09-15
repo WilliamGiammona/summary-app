@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const NavBar = () => {
   return (
-    <nav className="flex justify-between items-center max-w-5xl h-20 mx-auto">
+    <nav className="flex justify-between items-center max-w-5xl h-20 mx-auto mb-6">
       <figure className="flex-shrink-0">
         <Image
           src="/assets/Logo-pic.png"

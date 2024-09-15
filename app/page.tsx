@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <>
@@ -11,11 +13,19 @@ export default function Home() {
               Great summaries for busy people, individuals who barely have time
               to read, and even people who don’t like to read.
             </p>
-            <button className="w-8/12 bg-nav-hover p-2 rounded-md max-w-sm">
+            <button className="w-8/12 bg-nav-hover p-2 rounded-md max-w-sm hover:bg-[#20ba68] transition-colors duration-200">
               Login
             </button>
           </div>
-          <div className="w-1/2 bg-red-200">bye</div>
+
+          <figure className="flex justify-end w-1/2 pe-6">
+            <Image
+              src="/assets/Woman.png"
+              alt="Woman"
+              width={330}
+              height={200}
+            />
+          </figure>
         </div>
       </section>
     </>
