@@ -25,19 +25,37 @@ export default function Home() {
         </figure>
       </section>
 
-      <section className="max-w-5xl mx-auto p-6 box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05)">
-        <h2 className="text-4xl font-bold mb-6 mx-auto w-full  text-center">
+      <section className="max-w-5xl mx-auto py-6 box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05)">
+        <h2 className="text-4xl font-bold mb-8 mx-auto w-full  text-center">
           Understand books in few minutes
         </h2>
-        <div className="flex justify-center items-center text-center">
-          <div className="w-1/3 bg-blue-300 text-center">
-            <FaFileAlt size={40} />
+        <div className="flex ">
+          <div className="w-1/3 flex flex-col items-center p-2">
+            <FaFileAlt size={55} />
+            <h2 className="text-2xl font-bold mt-2 my-3 mx-auto w-full  text-center">
+              Read or Listen
+            </h2>
+            <p className="text-base font-light mb-6 text-center">
+              Save time by getting the core ideas from the best books.
+            </p>
           </div>
-          <div className="w-1/3">
-            <FaLightbulb size={40} />
+          <div className="w-1/3 flex flex-col items-center p-2">
+            <FaLightbulb size={55} />
+            <h2 className="text-2xl font-bold mt-2 my-3  mx-auto w-full  text-center">
+              Find your next read
+            </h2>
+            <p className="text-base font-light mb-6  text-center">
+              Explore book lists and personalized recommendations.
+            </p>
           </div>
-          <div className="w-1/3 bg-blue-300 text-center">
-            <FaMicrophone size={40} />
+          <div className="w-1/3 flex flex-col items-center p-2">
+            <FaMicrophone size={55} />
+            <h2 className="text-2xl font-bold mt-2 my-3  mx-auto w-full  text-center">
+              Briefcasts
+            </h2>
+            <p className="text-base font-light mb-6 text-center">
+              Gain valuable insights from briefcasts
+            </p>
           </div>
         </div>
       </section>
