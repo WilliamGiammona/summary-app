@@ -12,7 +12,10 @@ const config: Config = {
       fontFamily: {
         sans: ["var(--font-roboto)", "sans-serif", ...defaultFontFamily.sans],
       },
-      colors: {},
+      colors: {
+        "nav-default": "#032b41",
+        "nav-hover": "#2BD97C",
+      },
     },
   },
   plugins: [],

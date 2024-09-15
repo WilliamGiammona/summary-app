@@ -7,25 +7,24 @@ const NavBar = () => {
     <nav className="flex justify-between items-center max-w-5xl h-20 mx-auto">
       <figure className="flex-shrink-0">
         <Image
-          className="bg-transparent mix-blend-lighten"
           src="/assets/Logo-pic.png"
           alt="NavBar Logo"
           width={200}
           height={50}
         />
       </figure>
-      <ul className="flex">
-        <li className="mx-8">
+      <ul className="flex text-nav-default text-base">
+        <li className="mx-4 hover:text-nav-hover transition-colors duration-100">
           <Link href="/">Login</Link>
         </li>
-        <li>
-          <Link href="/about">About</Link>
+        <li className="mx-4 cursor-not-allowed hover:text-nav-default">
+          <span>About</span>
         </li>
-        <li className="mx-8">
-          <Link href="/">Contact</Link>
+        <li className="mx-4 cursor-not-allowed hover:text-nav-default">
+          <span>Contact</span>
         </li>
-        <li>
-          <Link href="/about">Help</Link>
+        <li className="mx-4 cursor-not-allowed hover:text-nav-default">
+          <span>Help</span>
         </li>
       </ul>
     </nav>
