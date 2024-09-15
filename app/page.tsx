@@ -21,6 +21,17 @@ export default function Home() {
           <Image src="/assets/Woman.png" alt="Woman" width={330} height={200} />
         </figure>
       </section>
+
+      <section className="max-w-5xl mx-auto p-6 box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05)">
+        <h2 className="text-4xl font-bold mb-6 mx-auto w-full  text-center">
+          Understand books in few minutes
+        </h2>
+        <div className="flex justify-center items-center text-center">
+          <div className="w-1/3 bg-blue-300 text-center">h</div>
+          <div className="w-1/3">h</div>
+          <div className="w-1/3 bg-blue-300 text-center">h</div>
+        </div>
+      </section>
     </>
   );
 }
