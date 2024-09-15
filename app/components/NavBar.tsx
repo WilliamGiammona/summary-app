@@ -9,8 +9,8 @@ const NavBar = () => {
         <Image
           src="/assets/Logo-pic.png"
           alt="NavBar Logo"
-          width={200}
-          height={50}
+          width={230}
+          height={80}
         />
       </figure>
       <ul className="flex  text-base">
