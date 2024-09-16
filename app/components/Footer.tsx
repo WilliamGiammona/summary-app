@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <section id="#footer" className="w-full bg-red-300 p-14">
-      <div className="flex w-full bg-blue-400">
+    <section id="#footer" className="w-full bg-[#f1f6f4] p-14">
+      <div className="flex w-full mb-16">
         <div className="w-1/4">
           <ul className="flex flex-col">
             <li>Actions</li>
@@ -41,7 +41,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div>Copyright © 2024 Summarist.</div>
+      <div className="text-center">Copyright © 2024 Summarist.</div>
     </section>
   );
 };
