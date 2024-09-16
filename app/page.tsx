@@ -186,9 +186,9 @@ export default function Home() {
             </div>
 
             <p className="text-xl font-light mb-6 ">
-              This app has been a game-changer for me! It's saved me so much
-              time and effort in reading and comprehending books. Highly
-              recommend it to all book lovers.
+              This app has been a game-changer for me! Its saved me so much time
+              and effort in reading and comprehending books. Highly recommend it
+              to all book lovers.
             </p>
           </div>
           <div className="bg-[#fff3d7] my-4 p-2">
@@ -199,7 +199,7 @@ export default function Home() {
 
             <p className="text-xl font-light mb-6 ">
               I love this app! It provides concise and accurate summaries of
-              books in a way that is easy to understand. It's also very
+              books in a way that is easy to understand. Its also very
               user-friendly and intuitive.
             </p>
           </div>
@@ -221,10 +221,9 @@ export default function Home() {
               <IoStarSharp />
             </div>
             <p className="text-xl font-light mb-6 ">
-              If you're a busy person who loves reading but doesn't have the
-              time to read every book in full, this app is for you! The
-              summaries are thorough and provide a great overview of the book's
-              content.
+              If youre a busy person who loves reading but doesnt have the time
+              to read every book in full, this app is for you! The summaries are
+              thorough and provide a great overview of the books content.
             </p>
           </div>
 
