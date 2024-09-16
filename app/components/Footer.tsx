@@ -61,7 +61,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="text-center">Copyright © 2024 Summarist.</div>
+      <div className="text-center font-medium">Copyright © 2024 Summarist.</div>
     </section>
   );
 };
