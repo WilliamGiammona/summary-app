@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="flex w-full mb-16">
         <div className="w-1/4">
           <ul className="flex flex-col">
-            <li>Actions</li>
+            <li className="font-bold">Actions</li>
             <li>Summarist Magazine</li>
             <li>Cancel Subscription</li>
             <li>Help</li>
@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
         <div className="w-1/4">
           <ul className="flex flex-col">
-            <li>Useful Links</li>
+            <li className="font-bold">Useful Links</li>
             <li>Pricing</li>
             <li>Summarist Business</li>
             <li>Gift Cards</li>
@@ -24,7 +24,7 @@ const Footer = () => {
         </div>
         <div className="w-1/4">
           <ul className="flex flex-col">
-            <li>Company</li>
+            <li className="font-bold">Company</li>
             <li>About</li>
             <li>Careers</li>
             <li>Partners</li>
@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
         <div className="w-1/4">
           <ul className="flex flex-col">
-            <li>Other</li>
+            <li className="font-bold">Other</li>
             <li>Sitemap</li>
             <li>Legal Notice</li>
             <li>Terms of Service</li>
