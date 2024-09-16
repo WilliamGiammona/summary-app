@@ -2,7 +2,7 @@ import Image from "next/image";
 import { FaFileAlt } from "react-icons/fa";
 import { FaLightbulb } from "react-icons/fa";
 import { FaMicrophone } from "react-icons/fa";
-import { IoStarSharp } from "react-icons/io5";
+// import { IoStarSharp } from "react-icons/io5";
 
 export default function Home() {
   return (
@@ -182,7 +182,7 @@ export default function Home() {
           <div className="bg-[#fff3d7] my-4 p-2">
             <div className="flex">
               <div className="">Hanna M.</div>
-              <IoStarSharp />
+              {/* <IoStarSharp /> */}
             </div>
 
             <p className="text-xl font-light mb-6 ">
@@ -194,7 +194,7 @@ export default function Home() {
           <div className="bg-[#fff3d7] my-4 p-2">
             <div className="flex">
               <div className="">David B.</div>
-              <IoStarSharp />
+              {/* <IoStarSharp /> */}
             </div>
 
             <p className="text-xl font-light mb-6 ">
@@ -206,7 +206,7 @@ export default function Home() {
           <div className="bg-[#fff3d7] my-4 p-2">
             <div className="flex">
               <div className="">Nathan S.</div>
-              <IoStarSharp />
+              {/* <IoStarSharp /> */}
             </div>
 
             <p className="text-xl font-light mb-6 ">
@@ -218,7 +218,7 @@ export default function Home() {
           <div className="bg-[#fff3d7] my-4 p-2">
             <div className="flex">
               <div className="">Ryan R.</div>
-              <IoStarSharp />
+              {/* <IoStarSharp /> */}
             </div>
             <p className="text-xl font-light mb-6 ">
               If youre a busy person who loves reading but doesnt have the time
@@ -227,7 +227,7 @@ export default function Home() {
             </p>
           </div>
 
-          <button className="w-8/12 bg-nav-hover p-2 rounded-md max-w-sm hover:bg-[#20ba68] transition-colors duration-200">
+          <button className="w-8/12 bg-nav-hover p-2 rounded-md max-w-sm hover:bg-[#20ba68] transition-colors duration-200 mt-4 mb-6">
             Login
           </button>
         </div>
