@@ -6,38 +6,58 @@ const Footer = () => {
       <div className="flex w-full mb-16">
         <div className="w-1/4">
           <ul className="flex flex-col">
-            <li className="font-bold">Actions</li>
-            <li>Summarist Magazine</li>
-            <li>Cancel Subscription</li>
-            <li>Help</li>
-            <li>Contact us</li>
+            <li className="font-bold mb-2">Actions</li>
+            <li className="text-sm mb-1 hover:cursor-not-allowed">
+              Summarist Magazine
+            </li>
+            <li className="text-sm mb-1 hover:cursor-not-allowed">
+              Cancel Subscription
+            </li>
+            <li className="text-sm mb-1 hover:cursor-not-allowed">Help</li>
+            <li className="text-sm mb-1 hover:cursor-not-allowed">
+              Contact us
+            </li>
           </ul>
         </div>
         <div className="w-1/4">
           <ul className="flex flex-col">
-            <li className="font-bold">Useful Links</li>
-            <li>Pricing</li>
-            <li>Summarist Business</li>
-            <li>Gift Cards</li>
-            <li>Authors & Publishers</li>
+            <li className="font-bold mb-2">Useful Links</li>
+            <li className="text-sm mb-1 hover:cursor-not-allowed">Pricing</li>
+            <li className="text-sm mb-1 hover:cursor-not-allowed">
+              Summarist Business
+            </li>
+            <li className="text-sm mb-1 hover:cursor-not-allowed">
+              Gift Cards
+            </li>
+            <li className="text-sm mb-1 hover:cursor-not-allowed">
+              Authors & Publishers
+            </li>
           </ul>
         </div>
         <div className="w-1/4">
           <ul className="flex flex-col">
-            <li className="font-bold">Company</li>
-            <li>About</li>
-            <li>Careers</li>
-            <li>Partners</li>
-            <li>Code of Conduct</li>
+            <li className="font-bold mb-2">Company</li>
+            <li className="text-sm mb-1 hover:cursor-not-allowed">About</li>
+            <li className="text-sm mb-1 hover:cursor-not-allowed">Careers</li>
+            <li className="text-sm mb-1 hover:cursor-not-allowed">Partners</li>
+            <li className="text-sm mb-1 hover:cursor-not-allowed">
+              Code of Conduct
+            </li>
           </ul>
         </div>
         <div className="w-1/4">
           <ul className="flex flex-col">
-            <li className="font-bold">Other</li>
-            <li>Sitemap</li>
-            <li>Legal Notice</li>
-            <li>Terms of Service</li>
-            <li>Privacy Policies</li>
+            <li className="font-bold mb-2">Other</li>
+            <li className="text-sm mb-1 hover:cursor-not-allowed">Sitemap</li>
+            <li className="text-sm mb-1 hover:cursor-not-allowed">
+              Legal Notice
+            </li>
+            <li className="text-sm mb-1 hover:cursor-not-allowed">
+              Terms of Service
+            </li>
+            <li className="text-sm mb-1 hover:cursor-not-allowed">
+              Privacy Policies
+            </li>
           </ul>
         </div>
       </div>
