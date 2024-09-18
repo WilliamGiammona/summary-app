@@ -1,10 +1,18 @@
+"use client";
+
 import Image from "next/image";
 import { FaFileAlt } from "react-icons/fa";
 import { FaLightbulb } from "react-icons/fa";
 import { FaMicrophone } from "react-icons/fa";
+import { useState } from "react";
+import LoginModal from "./Auth/LoginModal";
 // import { IoStarSharp } from "react-icons/io5";
 
 export default function Home() {
+  const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
+
+  const openLoginModal = () => setIsLoginModalOpen(true);
+  const closeLoginModal = () => setIsLoginModalOpen(false);
   return (
     <>
       <section className="max-w-5xl mx-auto flex p-6 box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05)">
@@ -14,9 +22,12 @@ export default function Home() {
           </h1>
           <p className="text-xl font-light mb-6 max-w-sm">
             Great summaries for busy people, individuals who barely have time to
-            read, and even people who don’t like to read.
+            read, and even people who dont like to read.
           </p>
-          <button className="w-8/12 bg-nav-hover p-2 rounded-md max-w-sm hover:bg-[#20ba68] transition-colors duration-200">
+          <button
+            className="w-8/12 bg-nav-hover p-2 rounded-md max-w-sm hover:bg-[#20ba68] transition-colors duration-200"
+            onClick={openLoginModal}
+          >
             Login
           </button>
         </div>
@@ -25,6 +36,8 @@ export default function Home() {
           <Image src="/assets/Woman.png" alt="Woman" width={330} height={200} />
         </figure>
       </section>
+
+      <LoginModal isOpen={isLoginModalOpen} onClose={closeLoginModal} />
 
       <section className="max-w-5xl mx-auto py-6 box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05)">
         <h2 className="text-4xl font-bold mb-8 mx-auto w-full  text-center">
