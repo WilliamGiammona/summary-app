@@ -240,7 +240,10 @@ export default function Home() {
             </p>
           </div>
 
-          <button className="w-8/12 bg-nav-hover p-2 rounded-md max-w-sm hover:bg-[#20ba68] transition-colors duration-200 mt-4 mb-6">
+          <button
+            className="w-8/12 bg-nav-hover p-2 rounded-md max-w-sm hover:bg-[#20ba68] transition-colors duration-200 mt-4 mb-6"
+            onClick={openLoginModal}
+          >
             Login
           </button>
         </div>
