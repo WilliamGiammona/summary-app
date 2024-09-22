@@ -21,7 +21,7 @@ const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose }) => {
 
   useEffect(() => {
     if (user) {
-      onClose(); // Close the modal if user is logged in
+      onClose();
     }
   }, [user, onClose]);
 
