@@ -1,11 +1,13 @@
-"use client";
-
 import React, { useState } from "react";
 import Image from "next/image";
 import LoginModal from "../Auth/LoginModal";
+import LogoutButton from "../Auth/LogoutButton";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { auth } from "../../firebaseConfig";
 
-const NavBar = () => {
+const NavBar: React.FC = () => {
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
+  const [user] = useAuthState(auth);
 
   const openLoginModal = () => setIsLoginModalOpen(true);
   const closeLoginModal = () => setIsLoginModalOpen(false);
@@ -21,15 +23,26 @@ const NavBar = () => {
             height={80}
           />
         </figure>
-        <ul className="flex  text-base">
-          <li className="mx-4 hover:text-nav-hover transition-colors duration-100">
-            <button
-              onClick={openLoginModal}
-              className="hover:text-nav-hover transition-colors duration-100"
-            >
-              Login
-            </button>
-          </li>
+        <ul className="flex text-base">
+          {user ? (
+            <>
+              <li className="mx-4">
+                <span>Welcome, {user.email}</span>
+              </li>
+              <li className="mx-4">
+                <LogoutButton />
+              </li>
+            </>
+          ) : (
+            <li className="mx-4">
+              <button
+                onClick={openLoginModal}
+                className="hover:text-nav-hover transition-colors duration-100"
+              >
+                Login
+              </button>
+            </li>
+          )}
           <li className="mx-4 cursor-not-allowed">
             <span>About</span>
           </li>
