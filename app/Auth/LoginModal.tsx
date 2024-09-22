@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+"use client";
+
+import React, { useState, useEffect } from "react";
 import { auth } from "../../firebaseConfig";
 import {
   signInWithEmailAndPassword,
@@ -17,11 +19,16 @@ const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose }) => {
   const [password, setPassword] = useState("");
   const [user, loading, error] = useAuthState(auth);
 
+  useEffect(() => {
+    if (user) {
+      onClose(); // Close the modal if user is logged in
+    }
+  }, [user, onClose]);
+
   const handleEmailLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      onClose();
     } catch (error) {
       console.error("Error signing in with email and password", error);
     }
@@ -31,13 +38,13 @@ const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose }) => {
     const provider = new GoogleAuthProvider();
     try {
       await signInWithPopup(auth, provider);
-      onClose();
     } catch (error) {
       console.error("Error signing in with Google", error);
     }
   };
 
   if (!isOpen) return null;
+  if (loading) return <div>Loading...</div>;
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
@@ -53,6 +60,9 @@ const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose }) => {
         <h2 className="text-2xl font-bold text-center mb-6">
           Log in to Summarist
         </h2>
+        {error && (
+          <p className="text-red-500 text-center mb-4">{error.message}</p>
+        )}
         <button
           onClick={handleGoogleLogin}
           className="w-full bg-blue-500 text-white p-3 rounded-md mb-4 font-semibold flex items-center justify-center"
