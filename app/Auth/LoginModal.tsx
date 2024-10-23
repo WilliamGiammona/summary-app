@@ -137,7 +137,7 @@ const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose }) => {
                 onClick={() => setIsSignUp(true)}
                 className="hover:underline"
               >
-                Don't have an account?
+                Don&lsquo;t have an account?
               </button>
             </>
           ) : (
