@@ -6,6 +6,8 @@ import { FaLightbulb } from "react-icons/fa";
 import { FaMicrophone } from "react-icons/fa";
 import { useState } from "react";
 import LoginModal from "./Auth/LoginModal";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 // import { IoStarSharp } from "react-icons/io5";
 
 export default function Home() {
@@ -15,6 +17,7 @@ export default function Home() {
   const closeLoginModal = () => setIsLoginModalOpen(false);
   return (
     <>
+      <NavBar />
       <section className="max-w-5xl mx-auto flex p-6 box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05)">
         <div className="w-1/2">
           <h1 className="text-4xl font-bold mb-6 max-w-sm">
@@ -248,6 +251,7 @@ export default function Home() {
           </button>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

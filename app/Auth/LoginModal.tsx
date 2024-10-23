@@ -17,6 +17,8 @@ interface LoginModalProps {
 }
 
 const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose }) => {
+  const router = useRouter();
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isSignUp, setIsSignUp] = useState(false);
@@ -25,8 +27,9 @@ const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose }) => {
   useEffect(() => {
     if (user) {
       onClose();
+      router.push("/for-you");
     }
-  }, [user, onClose]);
+  }, [user, onClose, router]);
 
   const handleEmailSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
