@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from "react";
 import { auth } from "../../firebaseConfig";
 import {
-  createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   signInWithPopup,
   GoogleAuthProvider,
